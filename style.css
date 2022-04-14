@@ -1,0 +1,581 @@
+                                                                                                                                    * {
+                                                                                                                                        padding: 0px;
+                                                                                                                                        margin: 0px;
+                                                                                                                                        box-sizing: border-box;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    body {
+                                                                                                                                        font-family: 'DM Serif Display', serif;
+                                                                                                                                        font-family: 'Karla', sans-serif;
+                                                                                                                                        overflow-x: hidden;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    a {
+                                                                                                                                        text-decoration: none;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    ul {
+                                                                                                                                        list-style: none;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    button {
+                                                                                                                                        all: unset;
+                                                                                                                                        cursor: pointer;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    nav {
+                                                                                                                                        display: flex;
+                                                                                                                                        justify-content: space-around;
+                                                                                                                                        align-items: center;
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                    @media only screen and (min-width: 851px) {
+                                                                                                                                        .burger_icon {
+                                                                                                                                            display: none;
+                                                                                                                                        }
+                                                                                                                                        .close_icon {
+                                                                                                                                            display: none;
+                                                                                                                                        }
+                                                                                                                                        .logo {
+                                                                                                                                            margin: 35px;
+                                                                                                                                            width: 10%;
+                                                                                                                                            height: 100%;
+                                                                                                                                        }
+                                                                                                                                        .nav_menu {
+                                                                                                                                            float: right;
+                                                                                                                                        }
+                                                                                                                                        .nav_menu ul {
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: 20px;
+                                                                                                                                            align-items: center;
+                                                                                                                                        }
+                                                                                                                                        .nav_menu ul li:not(last-child) {
+                                                                                                                                            margin-right: 30px;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li a {
+                                                                                                                                            color: #908F94;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            font-size: 15px;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li a:hover {
+                                                                                                                                            color: black;
+                                                                                                                                            transition: 0.5s ease-in-out;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li button {
+                                                                                                                                            font-size: 17px;
+                                                                                                                                            border: 2px black solid;
+                                                                                                                                            padding: 9px 28px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li button:hover {
+                                                                                                                                            background-color: black;
+                                                                                                                                            color: white;
+                                                                                                                                        }
+                                                                                                                                        /* //////////////////////////////////////////////// */
+                                                                                                                                        .intro_text {
+                                                                                                                                            background-color: #2C2640;
+                                                                                                                                            display: flex;
+                                                                                                                                            color: white;
+                                                                                                                                            padding: 140px 90px;
+                                                                                                                                            position: relative;
+                                                                                                                                            height: 100vh;
+                                                                                                                                        }
+                                                                                                                                        .intro_text::after {
+                                                                                                                                            content: '';
+                                                                                                                                            background-image: url(images/bg-pattern-intro-right-desktop.svg);
+                                                                                                                                            background-size: 100% 100%;
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            position: absolute;
+                                                                                                                                            width: 38%;
+                                                                                                                                            height: 100%;
+                                                                                                                                            right: -22px;
+                                                                                                                                            transform: rotate(359deg);
+                                                                                                                                            top: 2px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text::before {
+                                                                                                                                            left: 0px;
+                                                                                                                                            bottom: -327px;
+                                                                                                                                            content: '';
+                                                                                                                                            background-image: url(images/bg-pattern-intro-left-desktop.svg);
+                                                                                                                                            background-size: 100% 100%;
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            position: absolute;
+                                                                                                                                            width: 13%;
+                                                                                                                                            height: 79%;
+                                                                                                                                        }
+                                                                                                                                        .intro_text div .line {
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                            display: block;
+                                                                                                                                            width: 10%;
+                                                                                                                                            height: 1px;
+                                                                                                                                            background-color: #908F94;
+                                                                                                                                            position: absolute;
+                                                                                                                                            top: 110px;
+                                                                                                                                            left: 90px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text div h1 {
+                                                                                                                                            font-size: 60px;
+                                                                                                                                            font-family: 'DM Serif Display', serif;
+                                                                                                                                            letter-spacing: 3px;
+                                                                                                                                            line-height: 1;
+                                                                                                                                        }
+                                                                                                                                        .intro_text div p {
+                                                                                                                                            font-size: 16px;
+                                                                                                                                            line-height: 1.4;
+                                                                                                                                            margin-top: 50px;
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                            margin-right: 50px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text button {
+                                                                                                                                            border: 1px solid white;
+                                                                                                                                            padding: 7px 32px;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            font-size: 20px;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        .intro_text button:hover {
+                                                                                                                                            background-color: white;
+                                                                                                                                            color: black;
+                                                                                                                                        }
+                                                                                                                                        .intro_text .img1 {
+                                                                                                                                            width: 50%;
+                                                                                                                                            height: 100vh;
+                                                                                                                                            position: relative;
+                                                                                                                                        }
+                                                                                                                                        /* //////////////////////////////////////////////////////////// */
+                                                                                                                                        .container {
+                                                                                                                                            width: 85%;
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction {
+                                                                                                                                            padding-top: 150px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .line {
+                                                                                                                                            margin-top: 100px;
+                                                                                                                                            margin-bottom: 80px;
+                                                                                                                                            height: 1px;
+                                                                                                                                            width: 120px;
+                                                                                                                                            background: #908F94;
+                                                                                                                                            display: block;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction h1 {
+                                                                                                                                            color: #2A292F;
+                                                                                                                                            font-family: 'DM Serif Display', serif;
+                                                                                                                                            font-size: 45px;
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction {
+                                                                                                                                            display: flex;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction img {
+                                                                                                                                            display: block;
+                                                                                                                                            width: 15%;
+                                                                                                                                            margin-bottom: 30px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction h1 {
+                                                                                                                                            font-size: 30px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction p {
+                                                                                                                                            margin-top: -43px;
+                                                                                                                                            font-size: 15px;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction {
+                                                                                                                                            background-color: #2C2640;
+                                                                                                                                            padding: 70px 50px;
+                                                                                                                                            margin: 100px 0px;
+                                                                                                                                            color: white;
+                                                                                                                                            display: flex;
+                                                                                                                                            align-items: center;
+                                                                                                                                            justify-content: space-between;
+                                                                                                                                            background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            background-position: center right;
+                                                                                                                                            background-size: 40% 100%;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction h1 {
+                                                                                                                                            font-size: 60px;
+                                                                                                                                            font-family: 'DM Serif Display', serif;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction button {
+                                                                                                                                            font-size: 20px;
+                                                                                                                                            border: 2px white solid;
+                                                                                                                                            padding: 13px 45px;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            text-align: center;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction button:hover {
+                                                                                                                                            color: black;
+                                                                                                                                            background-color: white;
+                                                                                                                                        }
+                                                                                                                                        /* /////////////////////////////////////////////////////////////// */
+                                                                                                                                        .footer {
+                                                                                                                                            background-color: #FAFAFA;
+                                                                                                                                            padding: 100px 0px;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            position: relative;
+                                                                                                                                        }
+                                                                                                                                        .footer::before {
+                                                                                                                                            content: "";
+                                                                                                                                            position: absolute;
+                                                                                                                                            top: 0;
+                                                                                                                                            bottom: 0;
+                                                                                                                                            left: -9999px;
+                                                                                                                                            right: 0;
+                                                                                                                                            border-left: 9999px solid #FAFAFA;
+                                                                                                                                            box-shadow: 9999px 0 0 #FAFAFA;
+                                                                                                                                            z-index: -1000;
+                                                                                                                                        }
+                                                                                                                                        .footer .social {
+                                                                                                                                            float: right;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        .footer .social img:not(:last-child) {
+                                                                                                                                            margin-right: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .social img:hover {
+                                                                                                                                            filter: brightness(0.5);
+                                                                                                                                            transition: 0.4s ease-in-out;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_line {
+                                                                                                                                            display: block;
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 1px;
+                                                                                                                                            background-color: #908F94;
+                                                                                                                                            margin: 50px 0px;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_links {
+                                                                                                                                            display: flex;
+                                                                                                                                            justify-content: space-around;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_links .our_company p,
+                                                                                                                                        .footer .footer_links .Help_me p,
+                                                                                                                                        .footer .footer_links .Contact p,
+                                                                                                                                        .footer .footer_links .Others p {
+                                                                                                                                            color: #8F8D90;
+                                                                                                                                            font-size: 18px;
+                                                                                                                                            margin-bottom: 35px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_links .our_company ul li,
+                                                                                                                                        .footer .footer_links .Help_me ul li,
+                                                                                                                                        .footer .footer_links .Contact ul li,
+                                                                                                                                        .footer .footer_links .Others ul li {
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_links .our_company ul li a,
+                                                                                                                                        .footer .footer_links .Help_me ul li a,
+                                                                                                                                        .footer .footer_links .Contact ul li a,
+                                                                                                                                        .footer .footer_links .Others ul li a {
+                                                                                                                                            color: #2E2D35;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer a {
+                                                                                                                                            display: inline-block;
+                                                                                                                                            position: relative;
+                                                                                                                                        }
+                                                                                                                                        .footer a:hover:after {
+                                                                                                                                            content: '';
+                                                                                                                                            display: block;
+                                                                                                                                            position: absolute;
+                                                                                                                                            bottom: -1px;
+                                                                                                                                            left: 0px;
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 2px;
+                                                                                                                                            background-color: black;
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                    /* Start Media (Smallere Devices) */
+                                                                                                                                    /* ///////////////////////////////////////////////////////////////////// */
+                                                                                                                                    
+                                                                                                                                    @media only screen and (max-width: 850px) {
+                                                                                                                                        nav {
+                                                                                                                                            all: unset;
+                                                                                                                                        }
+                                                                                                                                        .logo {
+                                                                                                                                            margin: 15px;
+                                                                                                                                            width: 25%;
+                                                                                                                                            height: 100%;
+                                                                                                                                        }
+                                                                                                                                        .nav_menu {
+                                                                                                                                            position: absolute;
+                                                                                                                                            background-color: #2B282F;
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                            width: 100%;
+                                                                                                                                            margin-top: 15px;
+                                                                                                                                            height: 100%;
+                                                                                                                                            background-image: url(images/bg-pattern-mobile-nav.svg);
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            background-size: 100% 31%;
+                                                                                                                                            background-position: bottom 0px right 0px;
+                                                                                                                                            left: -1000px;
+                                                                                                                                            transition: 0.6s;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul {
+                                                                                                                                            display: block;
+                                                                                                                                            text-align: center;
+                                                                                                                                            padding-top: 50px;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li {
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li a {
+                                                                                                                                            color: white;
+                                                                                                                                            font-size: 25px;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                        }
+                                                                                                                                        nav .nav_menu ul li button {
+                                                                                                                                            align-items: center;
+                                                                                                                                            justify-content: center;
+                                                                                                                                            text-align: center;
+                                                                                                                                            border: 2px solid white;
+                                                                                                                                            padding: 15px 165px;
+                                                                                                                                            color: white;
+                                                                                                                                            font-size: 25px;
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            white-space: nowrap;
+                                                                                                                                        }
+                                                                                                                                        .burger_icon {
+                                                                                                                                            margin: 15px;
+                                                                                                                                            display: block;
+                                                                                                                                            float: right;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        .close_icon {
+                                                                                                                                            margin: 15px;
+                                                                                                                                            display: none;
+                                                                                                                                            float: right;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                            position: relative;
+                                                                                                                                            left: 40px;
+                                                                                                                                        }
+                                                                                                                                        .show {
+                                                                                                                                            left: 0px;
+                                                                                                                                        }
+                                                                                                                                        /* /////////////////////////////////////////////////////////////////// */
+                                                                                                                                        .intro {
+                                                                                                                                            background-image: url(images/image-intro-mobile.jpg);
+                                                                                                                                            height: 90vh;
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            background-size: 100% 100%;
+                                                                                                                                        }
+                                                                                                                                        .intro_text .img1 {
+                                                                                                                                            display: none;
+                                                                                                                                        }
+                                                                                                                                        .intro_text {
+                                                                                                                                            background-color: #2C2640;
+                                                                                                                                            padding: 100px 0px;
+                                                                                                                                            text-align: center;
+                                                                                                                                            color: white;
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            background-image: url(images/bg-pattern-intro-left-mobile.svg), url(images/bg-pattern-intro-right-mobile.svg);
+                                                                                                                                            background-position: top left, bottom -162px right 0px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text h1 {
+                                                                                                                                            font-size: 40px;
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text p {
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                            font-size: 20px;
+                                                                                                                                            margin-left: 20px;
+                                                                                                                                            margin-right: 20px;
+                                                                                                                                        }
+                                                                                                                                        .intro_text button {
+                                                                                                                                            color: white;
+                                                                                                                                            border: 2px solid white;
+                                                                                                                                            padding: 10px 70px;
+                                                                                                                                            font-size: 25px;
+                                                                                                                                        }
+                                                                                                                                        /* //////////////////////////////////////////////// */
+                                                                                                                                        .third_seaction .line {
+                                                                                                                                            margin-left: auto;
+                                                                                                                                            margin-right: auto;
+                                                                                                                                            margin-top: 100px;
+                                                                                                                                            margin-bottom: 80px;
+                                                                                                                                            height: 1px;
+                                                                                                                                            width: 120px;
+                                                                                                                                            background: #908F94;
+                                                                                                                                            display: block;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction h1 {
+                                                                                                                                            text-align: center;
+                                                                                                                                            color: #2A292F;
+                                                                                                                                            font-family: 'DM Serif Display', serif;
+                                                                                                                                            font-size: 45px;
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction img {
+                                                                                                                                            margin-left: auto;
+                                                                                                                                            margin-right: auto;
+                                                                                                                                            display: block;
+                                                                                                                                            width: 15%;
+                                                                                                                                            margin-bottom: 30px;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction h1 {
+                                                                                                                                            font-size: 30px;
+                                                                                                                                            text-align: center;
+                                                                                                                                        }
+                                                                                                                                        .third_seaction .icons_seaction p {
+                                                                                                                                            text-align: center;
+                                                                                                                                            margin-top: -43px;
+                                                                                                                                            margin-left: 70px;
+                                                                                                                                            margin-right: 70px;
+                                                                                                                                            margin-bottom: 66px;
+                                                                                                                                            font-size: 17px;
+                                                                                                                                        }
+                                                                                                                                        /* ////////////////////////////////////////////////////////////// */
+                                                                                                                                        .fourth_seaction {
+                                                                                                                                            text-align: center;
+                                                                                                                                            background-color: #2C2640;
+                                                                                                                                            padding: 80px 0px;
+                                                                                                                                            margin: 150px 30px;
+                                                                                                                                            color: white;
+                                                                                                                                            align-items: center;
+                                                                                                                                            background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+                                                                                                                                            background-size: 50% 90%;
+                                                                                                                                            background-position: top right;
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction h1 {
+                                                                                                                                            font-size: 60px;
+                                                                                                                                            padding: 0px 20px;
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                            font-family: 'DM Serif Display', serif;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction button {
+                                                                                                                                            font-size: 20px;
+                                                                                                                                            border: 2px white solid;
+                                                                                                                                            padding: 13px 45px;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                        }
+                                                                                                                                        .fourth_seaction button:hover {
+                                                                                                                                            color: black;
+                                                                                                                                            background-color: white;
+                                                                                                                                        }
+                                                                                                                                        /* ///////////////////////////////////////////////////////////// */
+                                                                                                                                        .footer {
+                                                                                                                                            background-color: #FAFAFA;
+                                                                                                                                            text-align: center;
+                                                                                                                                            padding: 90px 0;
+                                                                                                                                            text-transform: uppercase;
+                                                                                                                                            background-image: url(images/bg-pattern-footer-mobile.svg);
+                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                            background-size: 100% 18%;
+                                                                                                                                            /* background-position: top left; */
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_logo {
+                                                                                                                                            width: 30%;
+                                                                                                                                            margin-bottom: 40px;
+                                                                                                                                        }
+                                                                                                                                        .footer .social img {
+                                                                                                                                            margin-right: 20px;
+                                                                                                                                            width: 6%;
+                                                                                                                                            margin-bottom: 50px;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                        }
+                                                                                                                                        .footer .social img:hover {
+                                                                                                                                            filter: brightness(0.5);
+                                                                                                                                            transition: 0.4s ease-in-out;
+                                                                                                                                        }
+                                                                                                                                        .footer .footer_line {
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                            display: block;
+                                                                                                                                            width: 90%;
+                                                                                                                                            height: 1px;
+                                                                                                                                            background-color: #908F94;
+                                                                                                                                        }
+                                                                                                                                        .footer .our_company {
+                                                                                                                                            margin-top: 35px;
+                                                                                                                                        }
+                                                                                                                                        .footer .our_company p {
+                                                                                                                                            color: #8F8D90;
+                                                                                                                                            font-size: 18px;
+                                                                                                                                            margin-bottom: 35px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .our_company ul {
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                        }
+                                                                                                                                        .footer .our_company ul li {
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .our_company ul li a {
+                                                                                                                                            color: #2E2D35;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Help_me {
+                                                                                                                                            margin-top: 35px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Help_me p {
+                                                                                                                                            color: #8F8D90;
+                                                                                                                                            font-size: 18px;
+                                                                                                                                            margin-bottom: 35px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Help_me ul {
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Help_me ul li {
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Help_me ul li a {
+                                                                                                                                            color: #2E2D35;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Contact {
+                                                                                                                                            margin-top: 35px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Contact p {
+                                                                                                                                            color: #8F8D90;
+                                                                                                                                            font-size: 18px;
+                                                                                                                                            margin-bottom: 35px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Contact ul {
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Contact ul li {
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Contact ul li a {
+                                                                                                                                            color: #2E2D35;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Others {
+                                                                                                                                            margin-top: 35px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Others p {
+                                                                                                                                            color: #8F8D90;
+                                                                                                                                            font-size: 18px;
+                                                                                                                                            margin-bottom: 35px;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer .Others ul {
+                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Others ul li {
+                                                                                                                                            margin-bottom: 15px;
+                                                                                                                                        }
+                                                                                                                                        .footer .Others ul li a {
+                                                                                                                                            color: #2E2D35;
+                                                                                                                                            font-weight: 600;
+                                                                                                                                        }
+                                                                                                                                        .footer a {
+                                                                                                                                            display: inline-block;
+                                                                                                                                            position: relative;
+                                                                                                                                        }
+                                                                                                                                        .footer a:hover:after {
+                                                                                                                                            content: '';
+                                                                                                                                            display: block;
+                                                                                                                                            position: absolute;
+                                                                                                                                            bottom: -1px;
+                                                                                                                                            left: 0px;
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 2px;
+                                                                                                                                            background-color: black;
+                                                                                                                                        }
+                                                                                                                                    }
